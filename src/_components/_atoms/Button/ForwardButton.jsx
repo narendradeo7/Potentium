@@ -2,21 +2,21 @@ import React from 'react'
 import Typography from '../Typography/Typography'
 import { BsArrowUpRight } from "react-icons/bs";
 
-const ForwardButton = ({btntext,fwdlink}) => {
+const ForwardButton = ({btntext,fwdlink,isdark}) => {
   return (
     <div className='buttn flex gap-5'>
 
-          <div className='spbtn'>
+          <div className={`buttn flex gap-5 ${isdark ? 'spbtn-dark' : 'spbtn'}`}>
           <Typography
               variant="bodylg"
               weight={400}
-              className="text-primary1 text-wrap "
+              className=" text-wrap "
             >
               {btntext}
             </Typography>
           </div>
 
-          <button className='spbtnicon'>
+          <button className={`${isdark?'spbtnicon-dark':'spbtnicon'}`}>
           <BsArrowUpRight/>
 
           </button>

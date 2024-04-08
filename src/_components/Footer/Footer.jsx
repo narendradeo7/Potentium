@@ -4,7 +4,7 @@ import Typography from '../_atoms/Typography/Typography'
 // icons 
 import { FaFacebookF } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
-import { BsTwitterX } from "react-icons/bs";
+import { BsArrowUp, BsTwitterX } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import ForwardButton from '../_atoms/Button/ForwardButton';
 
@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <div className='bg-primary1 w-full pt-[70px] px-15 pb-15'>
 
-            <div className='w-full grid grid-flow-row grid-cols-2 mb-[45px]'>
+            <div className='w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 mb-[45px]'>
 
                 <div className='logocomp' >
                     <div className=' w-[375px] mb-5'>
@@ -120,47 +120,47 @@ const Footer = () => {
                 {/* newsl  */}
 
                 <div className=''>
-                 
-                 <div className='w-[375px]'>
 
-                    <Typography
-                        variant="heading1_1"
-                        weight={400}
-                        className="text-gray-500 text-wrap text-[32px] leading-10 mb-4"
-                    >
-                        {footConfig.newsletter.head}
-                    </Typography>
+                    <div className='w-[375px]'>
 
-                    <div className='w-[80%]'>
                         <Typography
-                            variant="bodysm"
+                            variant="heading1_1"
                             weight={400}
-                            className="text-gray-500 text-wrap   "
+                            className="text-gray-500 text-wrap text-[32px] leading-10 mb-4"
                         >
-                            {footConfig.newsletter.desc}
+                            {footConfig.newsletter.head}
                         </Typography>
 
+                        <div className='w-[80%]'>
+                            <Typography
+                                variant="bodysm"
+                                weight={400}
+                                className="text-gray-500 text-wrap   "
+                            >
+                                {footConfig.newsletter.desc}
+                            </Typography>
 
+
+                        </div>
+
+                        <div className='border-b-[1px] border-gray-900  mt-12 mb-4'>
+                            <Typography
+                                variant="bodysm"
+                                weight={400}
+                                className="text-gray-900 text-wrap   "
+                            >
+                                {footConfig.newsletter.btntag}
+                            </Typography>
+
+                        </div>
+
+                        {/* button  */}
+
+                        <ForwardButton
+                            btntext={footConfig.newsletter.btntext}
+                            fwdlink={footConfig.newsletter.fwdto}
+                        />
                     </div>
-
-                    <div className='border-b-[1px] border-gray-900  mt-12 mb-4'>
-                        <Typography
-                            variant="bodysm"
-                            weight={400}
-                            className="text-gray-900 text-wrap   "
-                        >
-                            {footConfig.newsletter.btntag}
-                        </Typography>
-
-                    </div>
-
-                    {/* button  */}
-
-                    <ForwardButton
-                        btntext={footConfig.newsletter.btntext}
-                        fwdlink={footConfig.newsletter.fwdto}
-                    />
-                 </div>
                 </div>
 
 
@@ -169,20 +169,51 @@ const Footer = () => {
 
                 <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2'>
 
-                <div></div>
+                    <div className=' self-end w-[80px] h-[80px] flex justify-center items-center border-[1px] rounded-lg border-white  text-white text-3xl' >
+                        <BsArrowUp />
+                    </div>
 
-                <div className='flex flex-col gap-5'>
-                <Typography
-                            variant="bodysm"
-                            weight={400}
-                            className="text-gray-500 text-wrap   "
-                        >
-                            {footConfig.copyright.head}
-                        </Typography>
+                    <div className='self-end flex flex-col gap-5'>
+                        <div>
+                            <Typography
+                                variant="bodysm"
+                                weight={400}
+                                className="text-gray-500 text-wrap   "
+                            >
+                                {footConfig.copyright.head}
+                            </Typography>
 
-                
+                        </div>
 
-                </div>
+                        <div className='md:flex md:flex-row md:gap-[38px]'>
+                            <a href={footConfig.copyright.terms.fwdto}>
+                                <Typography
+                                    variant="heading4"
+                                    weight={400}
+                                    className="text-white text-wrap   "
+                                >
+                                    {footConfig.copyright.terms.tag}
+                                </Typography>
+                            </a>
+
+                            <a href={footConfig.copyright.privacy.fwdto}>
+                                <Typography
+                                    variant="heading4"
+                                    weight={400}
+                                    className="text-white text-wrap"
+                                >
+                                    {footConfig.copyright.privacy.tag}
+                                </Typography>
+                            </a>
+
+
+
+                        </div>
+
+
+
+
+                    </div>
 
 
                 </div>
