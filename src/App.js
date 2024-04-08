@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutusSec from "./_components/AboutusSec";
+import FeatureSec from "./_components/FeatureSec";
+import Footer from "./_components/Footer/Footer";
+import HeroSec from "./_components/Herosec/HeroSec";
+import LLMsSec from "./_components/LLMsSec";
+import ResourcesSec from "./_components/ResourcesSec";
+import Contactus from "./_components/_atoms/Contactus";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <HeroSec/>
+      <AboutusSec/>
+     <FeatureSec/>
+     <ResourcesSec/>
+     <LLMsSec/>
+     <Contactus/>
+     <Footer/>
     </div>
+
   );
 }
 

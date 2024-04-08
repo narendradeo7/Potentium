@@ -1,0 +1,60 @@
+/*Noto*/
+
+.display1 {
+    @apply text-6xl md:text-7xl lg:text-8xl leading-[114px];
+  }
+  
+  .display2 {
+    @apply text-7xl leading-[88px];
+  }
+
+  .heading1 {
+    font-family: "Falkum_test";
+    @apply text-2xl sm:text-4xl md:text-5xl lg:text-[64px] leading-10 lg:leading-[80px];
+  }
+
+  .heading1_1 {
+    font-family: "Falkum_test";
+    @apply text-2xl sm:text-3xl md:text-[32px]  lg:text-[32px] leading-8 lg:leading-10;
+  }
+
+  .heading2 {
+    font-family: "Falkum_test";
+    @apply text-sm sm:text-base md:text-lg lg:text-xl leading-5 lg:leading-[25px];
+  }
+  
+  .heading3{
+    font-family: "Falkum_test";
+    @apply text-sm sm:text-sm md:text-base lg:text-lg leading-5 lg:leading-[22px];
+  }
+
+  .heading4{
+    font-family: "Falkum_test";
+    @apply text-sm sm:text-sm md:text-base lg:text-base leading-5 lg:leading-6;
+  }
+
+  /* magz */
+
+  .bodyxl {
+    font-family: "Magazine_Grotesque";
+    @apply text-lg sm:text-lg md:text-3xl lg:text-5xl leading-12;
+  }
+
+  .bodylg {
+    font-family: "Magazine_Grotesque";
+    @apply text-xs sm:text-sm md:text-base lg:text-lg leading-6;
+  }
+
+  .bodylg_mlh {
+    font-family: "Magazine_Grotesque";
+    @apply text-xs sm:text-sm md:text-base lg:text-lg leading-7;
+  }
+
+  .bodysm {
+    font-family: "Magazine_Grotesque";
+    @apply text-xs sm:text-sm md:text-base lg:text-base leading-6;
+  }
+
+  
+
+  
